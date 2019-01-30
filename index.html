@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ADP Voice Assistant</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="devices.min.css" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- <p class="output">Listening...</p> -->
+    <div id="phone">
+      <div class="marvel-device note8">
+          <div class="inner"></div>
+          <div class="overflow">
+              <div class="shadow"></div>
+          </div>
+          <div class="speaker" onclick="changeBG()"></div>
+          <div class="sensors"></div>
+          <div class="more-sensors"></div>
+          <div class="sleep"></div>
+          <div class="volume"></div>
+          <div class="camera"></div>
+      <div class="screen"> <!--start-->
+      <img width="400px" height="22px" src="img/topbar.png">
+      <div id="container">
+      <div id="screen0">
+        <img height="640px" width="360px" src="img/dashboard.png">
+      </div>
+      <h3 class="header">ADP Voice Assistant</h3>
+      <div class="output">
+        <p>Hello, how can I help you?</p>
+      </div>
+        <ul>
+          <li>What can you do?</li>
+          <li>show team time cards</li>
+          <li>time off requests</li>
+          <li>show missed punches</li>
+          <li>Greg Murphy's birthday</li>
+          <li>vacation balance</li>
+          <li>take Tuesday off</li>
+          <li>show schedule</li>
+          <li>clock in with comment</li>
+        </ul>
+      <div id="contentArea"></div>
+      <div id="screen1">
+        <h5>Clock - Comment</h5>
+        <img height="60px" width="120px" src="img/clock-time.png">
+        <!-- <h4>10:30 AM</h4> -->
+        <h6>COMMENT:</h6>
+        <!-- <textarea id="comment" rows="5" cols="40" value=""></textarea> -->
+
+      </div>
+      <div id="screen2">
+        <img height="379px" width="340px" src="img/TimecardSummary.png">
+
+        <ul>
+          <li>View missed punches</li>
+          <li>View exceptions</li>
+          <li>View all Timecards</li>
+        </ul>
+
+      </div>
+
+      <div id="screen3">
+        <img class="missedPunches" onclick="punchEdit(this)" height="448px" width="342px" src="img/MissedPunchesSummary.png">
+      </div>
+
+      <div id="screen4">
+        <img class="missedEdit" onclick="punchCollapse(this)" width="342px" height="626px" src="img/MissedPunchEdit.png">
+      </div>
+
+      <div id="screen5">
+        <img onclick="vacationEdit(this)" width="342px" height="295px" src="img/vacation1.png">
+      </div>
+
+      <div id="screen6">
+        <img width="342px" height="170px" src="img/vacation2.png">
+      </div>
+
+      <div id="screen7">
+        <img width="340px" height="85px" src="img/gregmurphy.png">
+      </div>
+
+      <div id="screen8">
+        <img width="340px" height="85px" src="img/timeoffrequest.png">
+      </div>
+      <div id="screen9">
+        <ul>
+            <li>What can you do?</li>
+            <li>show team time cards</li>
+            <li>time off requests</li>
+            <li>show missed punches</li>
+            <li>Greg Murphy's birthday</li>
+            <li>vacation balance</li>
+            <li>take Tuesday off</li>
+            <li>show schedule</li>
+            <li>clock in with comment</li>
+        </ul>
+      </div>
+      <div id="screen10">
+        <ul>
+          <li>Clock in</li>
+          <li>Clock in with Comment</li>
+          <li>Cancel MeaL Deduction</li>
+          <li>Transfer</li>
+        </ul>
+      </div>
+
+    </div> <!--container-->
+        <!-- Content goes here -->
+        <div id="footer">
+          <input type="text" id="userInputText" value=""></input>
+          <button id="textButton"><i class='material-icons'>arrow_forward</i></button>
+          <button id="speakButton"><i class="material-icons">keyboard_voice</i></button>
+        </div>
+        <div id="indicator"></div>
+      </div>
+    </div>
+
+  </div> <!--phone-->
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
